@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Human</title>
+    <style>
+        body {
+            padding: 20px;
+            margin: 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .main {
+            padding: 10px;
+            width: 500px;
+            min-height: 600px;
+            border: 1px solid gainsboro;
+            text-align: center;
+            box-shadow: 1px rgb(233, 231, 231);
+        }
+
+        .title {
+            color: rgb(11, 5, 132);
+            font-size: 28px;
+        }
+
+        .text {
+            padding: 10px;
+        }
+
+        .bottom-text {
+            text-align: start;
+            padding: 20px;
+        }
+
+        .info {
+            font-size: 12px;
+            background-color: aliceblue;
+            padding: 20px;
+        }
+
+        .form {
+            padding: 10px;
+        }
+
+        input {
+            width: 200px;
+            border: 1px solid rgb(87, 3, 140);
+            border-radius: 5px;
+            padding: 5px 10px;
+            margin: 1px;
+        }
+
+        button {
+            padding: 5px;
+            background-color: rgb(9, 50, 153);
+            color: white;
+            border: 0px;
+            border-radius: 5px;
+            width: 100px;
+            cursor: pointer;
+            margin: 1px 2px;
+        }
+
+        #output {
+            color: rgb(4, 4, 118);
+            font-size: 20px;
+        }
+
+        .outtext {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+        <p class="title">Hi, <b>Ma _ _ a</b> How are you?</p>
+        <div class="peras">
+            <p class="text">I can't follow you anymore, I want to meet and talk to you only once <br> (just 5 minutes)
+                please, I will be waiting for you </p>
+
+
+            <p>On 10-Jan-2025 (Friday) <b>12:15 pm </b></p>
+
+            <p>OR</p>
+            <p>On 13-Jan-2025 (Monday) <b>10:00 am </b></p>
+
+            <p>OR</p>
+            <p>On 14-Jan-2025 (Tuesday) <b>12:15 pm </b></p>
+        </div>
+
+        <div class="bottom-text">
+            <p>Venue: <b>Nearby NUML Mosque area</b></p>
+            <h3>Thanks,</h3>
+            <h4>Regards, <br>Super Human</h4>
+
+        </div>
+
+        <div class="info">
+            <p>Note: If you guess/type my name correctly, you will find my website link where you can find complete
+                details about me</p>
+
+            <div class="form">
+                <input type="text" id="name" placeholder="adam">
+                <button onclick="checkName()">check</button>
+
+                <p id="output"></p>
+            </div>
+
+        </div>
+    </div>
+    <script>
+        let outBox = document.getElementById('output')
+        let checkName = () => {
+            let inp = document.getElementById('name').value;
+           
+            if (inp.toLowerCase().includes("abid")) {
+                outBox.innerHTML = `<a href="https://abidkk.site/">www.abidkk.site</a>`
+               
+            }
+            else {
+                outBox.innerHTML = `<p class='outtext'>Try More </p>`
+            }
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>
